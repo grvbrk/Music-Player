@@ -1,15 +1,15 @@
-import {Routes, Route} from "react-router-dom"
-import SideBar from "./components/SideBar.tsx";
-
+import { Routes, Route } from "react-router-dom";
+import Player from "./components/Player.tsx";
+// import SideBar from "./components/SideBar.tsx";
 
 function App() {
-  return <div>
-    <Routes>
-      <Route path="/" element={<SideBar />} />
-
-
-    </Routes>
-  </div>;
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Player />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
